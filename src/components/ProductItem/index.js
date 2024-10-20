@@ -1,6 +1,6 @@
-import React from 'react'
-
 import {useNavigate} from 'react-router-dom'
+
+import AddPopUp from '../AddPopUp'
 
 import './index.css'
 
@@ -11,6 +11,7 @@ const ProductItem = props => {
     const openProduct = () => {
         navigate(`/product/${id}`)
     }
+    
     return (
         <li className="product-item">
             <div className="product-first-half">
@@ -32,7 +33,7 @@ const ProductItem = props => {
                         <p className="product-final-rate">₹ {finalPrice}</p>
                     </div>
                 <div className="product-buttons-container">
-                    <button type="button" className="add-to-cart-button">Add to Cart</button>
+                    <AddPopUp item={item}/>
                     <button type="button" className="buy-on-rent-button">Buy  on Rent</button>
                 </div>
             </div>

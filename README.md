@@ -1,7 +1,7 @@
 # Chaperone Plant Website
 
 ## Introduction
-The **Chaperone Plant Website** is a React-based platform designed to provide detailed information about plants, allowing users to explore related content in an intuitive and interactive way. This project highlights my skills in modern web development, focusing on creating a user-friendly and responsive interface.
+The **Chaperone Plant Website** is a React-based platform designed to provide detailed information about plants, allowing users to purchase the products in an intuitive and interactive way. This project highlights my skills in modern web development, focusing on creating a user-friendly and responsive interface.
 
 ## Features
 - **User-Friendly Plant Information Display:** A well-organized display of plant details to enhance user engagement.
@@ -45,9 +45,23 @@ This application follows a **component-based architecture** to ensure maintainab
   - Home Path: `/`
   - Product View: `/products/:id`
 
-### View Product Button
+### Adding functionality to 'View Product' Button
 - Integrated the `useNavigate` hook to navigate dynamically to the product page using the product’s ID. Used `useParams` to retrieve the product ID from the route.
 
+### Adding functionality to 'Add to Cart' Button
+- Creating the AddPopUp Component
+  -Created an AddPopUp component inside src/components/.
+  -Installed the reactjs-popup package by running 'npm install reactjs-popup'
+  -Imported the Popup component from reactjs-popup into AddPopUp.
+-Integrating the Popup for the Add to Cart Button
+  -Referred to the React Popup documentation and integrated the relevant popup type. The popup was then customized to meet the project’s requirements.
+  -The ‘Add to Cart’ button was set as the trigger for the popup, which displays a checkout modal when clicked.
+-Managing State with useState Hook and adding close button
+ -Used the useState hook to manage the state of the checkout process. This tracks whether the checkout button inside the modal is clicked.
+ -Imported 'x' icon from 'react-icons' for the close button.
+-Displaying the Final Modal:
+ -Once the checkout button inside the modal is clicked, the state is updated, and a final Congratulations Page is displayed.
+ -The Congratulations page includes a ‘Continue Shopping’ button, which closes the modal and returns the user to the main shopping area.
 ## Challenges Faced
 ### 1. Pagination Implementation
 **Challenge:** Implementing pagination posed some difficulties, especially when specifying different variables such as noOfPages, lastIndex, firstIndex, and currentPage. I had to determine where to add these variables and how to manage state with useState to ensure the Home page re-renders whenever the page changes. 
