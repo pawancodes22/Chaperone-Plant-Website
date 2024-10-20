@@ -4,8 +4,9 @@
 The **Chaperone Plant Website** is a React-based platform designed to provide detailed information about plants, allowing users to purchase the products in an intuitive and interactive way. This project highlights my skills in modern web development, focusing on creating a user-friendly and responsive interface.
 
 ## Features
-- **User-Friendly Plant Information Display:** A well-organized display of plant details to enhance user engagement.
+- **User-Friendly Plant Information Display:** A well-organized display with responsiveness and decent transitions and animations.
 - **Pagination:** Implements pagination for efficient navigation of large product datasets.
+- **Modal:** open a modal that displays the product’s details and an option to confirm adding the product to the cart.
 - **Search Bar:** A dynamic search feature for users to quickly find products.
 - **Profile and Cart Icons:** Smooth user navigation for account and shopping management.
 - **Thank You Page:** A visually appealing thank you page designed to improve user satisfaction and overall experience.
@@ -23,6 +24,7 @@ This application follows a **component-based architecture** to ensure maintainab
 ### Navbar Component
 - Created a responsive Navbar component (`src/components/Navbar`), ensuring a clean structure with consistent font sizes, weights, and colors.
 - CSS Flexbox was used extensively to achieve the desired layout, with additional components for the profile and cart icons.
+- Link element is wrapped with logo, so that clicking on logo takes back to home route
 
 ### Static Product Data
 - A well-structured data folder (`src/data/productsData`) was created, housing product information in an organized manner, with properties like `imageUrl`, `name`, `specification`, `rating`, `originalPrice`, and `finalPrice`. This **good code structure** ensures easy management and scalability.
@@ -62,15 +64,26 @@ This application follows a **component-based architecture** to ensure maintainab
 - Displaying the Final Modal:
   - Once the checkout button inside the modal is clicked, the state is updated, and a final Congratulations Page is displayed.
   - The Congratulations page includes a ‘Continue Shopping’ button, which closes the modal and returns the user to the main shopping area.
+
+### Adding responsiveness
+- Navbar
+  - Added a menu icon in navbar for smaller devices to view various options.
+  - Had set the sizes of various elements using css media queries.
+
+
 ## Challenges Faced
 ### 1. Pagination Implementation
-**Challenge:** Implementing pagination posed some difficulties, especially when specifying different variables such as noOfPages, lastIndex, firstIndex, and currentPage. I had to determine where to add these variables and how to manage state with useState to ensure the Home page re-renders whenever the page changes. 
+**Challenge:** Implementing pagination posed some difficulties, especially when specifying different variables such as noOfPages, lastIndex, firstIndex, and currentPage. I had to determine where to add these variables and how to manage state with useState to ensure the Home page re-renders whenever the page changes.
+
 **Solution:** After thoroughly analyzing the component structure and understanding which parts needed re-rendering, I was able to determine where to place the pagination variables and state. I made sure to maintain a clean and structured codebase by carefully organizing the variables and related functions 
+
 **Outcome:** This enhanced my understanding of React’s state management and how to efficiently implement pagination while maintaining clean and modular code.
 
 ### 2. React Router Syntax Changes (Version 5 to Version 6)
-**Challenge:**  I had previously worked with react-router-dom version 5 while learning through NxtWave, but in this project, version 6 was being used, which introduced significant syntax changes. Hooks and components in version 6 replaced some of the older ones, which created confusion when trying to navigate through the app.  
+**Challenge:**  I had previously worked with react-router-dom version 5 while learning through NxtWave, but in this project, version 6 was being used, which introduced significant syntax changes. Hooks and components in version 6 replaced some of the older ones, which created confusion when trying to navigate through the app.
+
 **Solution:**  I used ChatGPT to help identify the new syntax and hook replacements in version 6, allowing me to quickly adapt to the updated version of react-router-dom. I learned how to replace outdated code and use the latest methods for routing and navigation in React.
+
 **Outcome:** With the help of AI tools, I was able to overcome my challenges with new syntax quickly. This experience also prepared me for future updates, as I’m now confident in adapting to changes in libraries or frameworks by researching or using AI assistance.
 
 
@@ -80,7 +93,8 @@ This application follows a **component-based architecture** to ensure maintainab
 **Outcome:** Documentation was completed within 30-40 minutes, allowing me to focus on other development tasks while still delivering high-quality, professional documentation.
 
 ### 4. Documentation Efficiency with AI Assistance
-**Challenge:** While developing the modals triggered by the "Add to Cart" button, I encountered difficulties creating the desired background for these modals. Initially, I was unsure how to implement the background design effectively.  
+**Challenge:** While developing the modals triggered by the "Add to Cart" button, I encountered difficulties creating the desired background for these modals. Initially, I was unsure how to implement the background design effectively. 
+
 **Solution:** Upon reviewing the Figma design, I identified that the background consisted of ellipses. To achieve this effect, I consulted ChatGPT for guidance on creating such ellipses. After receiving an example, I customized the code to fit my specific style and dimensions as outlined in the Figma file. However, I faced another issue: the ellipses were obstructing content both in the modal and on the homepage. After thoroughly analyzing the stacking context, I resolved this by setting the z-index of the ellipses to -1 and the overflow property of the modal to hidden.
 **Outcome:** This approach successfully resolved the issue, allowing the modal content to be displayed properly while maintaining the desired background design. This experience not only enhanced my understanding of CSS properties and stacking contexts but also improved my problem-solving skills in a practical development scenario.
 
@@ -95,4 +109,3 @@ To run this project in your environment, follow these steps:
     npm install
 4. Run the project:
     npm start
-

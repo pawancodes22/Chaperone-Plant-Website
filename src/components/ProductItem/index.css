@@ -2,9 +2,21 @@
 
 .product-item {
     list-style-type: none;
-    width: 250px;
-    margin: 0px 30px 30px 0px;
+    width: 270px;
+    margin: 0px 20px 20px 0px;
     font-family: Poppins, sans-serif;
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+    @media (max-width: 767px) {
+        width: 160px;
+    }
+    @media (max-width: 1024px) {
+        width: 200px;
+    }
+}
+
+.product-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .view-product {
@@ -16,6 +28,15 @@
     margin-top: 7px;
     border-style: none;
     padding: 5px 0px;
+    transition: all 0.3s ease;
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+.view-product:hover {
+    transform: scale(1.01);
+    background-color: #1a6a1a;
 }
 
 .product-first-half {
@@ -29,6 +50,12 @@
     height: 300px;
     display: flex;
     align-items: flex-end;
+    @media (max-width: 767px) {
+        height: 200px;
+    }
+    @media (max-width: 1024px) {
+        height: 230px;
+    }
 }
 
 .product-img {
@@ -37,13 +64,16 @@
 }
 
 .product-second-half {
-
+    padding: 15px;
 }
 
 .product-heading {
     font-weight: 500;
     font-size: 20px;
     margin: 5px;
+    @media (max-width: 1024px) {
+        font-size: 18px;
+    }
 }
 
 .product-specification {
@@ -51,6 +81,9 @@
     font-size: 14px;
     font-weight: 400;
     margin: 3px;
+    @media (max-width: 1024) {
+        font-size: 12px;
+    }
 }
 
 .product-rating-container {
@@ -63,6 +96,9 @@
     font-weight: 500;
     font-size: 15px;
     margin: 0px 0px 0px 15px;
+    @media (max-width: 1024) {
+        font-size: 13px;
+    }
 }
 
 .product-prices-container {
@@ -77,6 +113,9 @@
     font-size: 16px;
     color: #5E5A5AB2;
     margin: 5px;
+    @media (max-width: 1024) {
+        font-size: 14px;
+    }
 }
 
 .product-final-rate {
@@ -84,12 +123,19 @@
     font-size: 20px;
     color: #5E5A5A;
     margin: 5px;
+    @media (max-width: 1024px) {
+        font-size: 18px;
+    }
 }
 
 .product-buttons-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        align-items: strech;
+    }
 }
 
 .add-to-cart-button {
@@ -101,6 +147,17 @@
     color: white;
     border-radius: 7px;
     padding: 5px 10px;
+    transition: transform 0.3s ease;
+    @media (max-width: 1024px) {
+        font-size: 14px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+.add-to-cart-button:hover {
+    transform: scale(1.05);
+    background-color: #1a6a1a;
 }
 
 .buy-on-rent-button {
@@ -113,4 +170,13 @@
     font-family: Poppins, sans-serif;
     background-color: transparent;
     padding: 5px 10px;
+    transition: transform 0.3s ease;
+    @media (max-width: 1024px) {
+        font-size: 13px;
+        width: 100%;
+    }
+}
+
+.buy-on-rent-button:hover {
+    transform: scale(1.05);
 }

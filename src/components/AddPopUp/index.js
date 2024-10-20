@@ -57,7 +57,7 @@ const AddPopUp = props => {
                                     <br />
                                     Order Placed!
                                 </p>
-                                <img src="https://res.cloudinary.com/dt0mcvcq3/image/upload/v1729415788/Chaperonw/congralations_plant_oet9gx.png" alt="animated plant" />
+                                <img className="thank-plant" src="https://res.cloudinary.com/dt0mcvcq3/image/upload/v1729415788/Chaperonw/congralations_plant_oet9gx.png" alt="animated plant" />
                                 <p className="modal2-thank-you-text">Thank you for choosing Chaperone services.
                                 We will soon get in touch with you!</p>
                                 <button onClick={close} className="continue-shopping-btn">Continue Shopping</button>

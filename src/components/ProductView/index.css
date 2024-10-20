@@ -21,6 +21,9 @@
     letter-spacing: 1.5px;
     line-height: 1.4;
     animation: fadeInUp 1.5s ease-in-out;
+    @media (max-width: 767px) {
+        font-size: 1rem;
+    }
 }
 
 @keyframes fadeInUp {
@@ -50,6 +53,9 @@
     border-radius: 50px;
     text-transform: uppercase;
     transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+    @media (max-width: 767px) {
+        font-size: 0.8rem;
+    }
 }
 
 .back-to-menu-btn:hover {

@@ -48,9 +48,67 @@ const Home = () => {
                     </div>
                 </section>
                 <section className="products-filter-section">
-                    <div className="filters-container">
-                        
-                    </div>
+                    <ul className="filters-container">
+                        <li className="filter-list-item">
+                            <p className="no-margin">Filter</p>
+                            <p className="no-margin">CLEAR ALL</p>
+                        </li>
+                        <hr className="filter-hr" />
+                        <li className="filter-list-item">
+                            <p className="no-margin">Types of Plants</p>
+                            <p className="no-margin">+</p>
+                        </li>
+                        <hr className="filter-hr" />
+                        <li className="filter-list-item">
+                            <p className="no-margin">Price</p>
+                            <p className="no-margin">+</p>
+                        </li>
+                        <hr className="filter-hr" />
+                        <li className="filter-list-item">
+                            <p className="no-margin">Nursery</p>
+                            <p className="no-margin">+</p>
+                        </li>
+                        <hr className="filter-hr" />
+                        <li className="filter-list-item">
+                            <p className="no-margin">Ideal Plants Location</p>
+                            <p className="no-margin">+</p>
+                        </li>
+                        <hr className="filter-hr" />
+                        <li className="filter-list-item">
+                            <p className="no-margin">Indoor/Outdoor</p>
+                            <p className="no-margin">+</p>
+                        </li>
+                        <hr className="filter-hr" />
+                        <li className="filter-list-item">
+                            <p className="no-margin">Maintenance</p>
+                            <p className="no-margin">+</p>
+                        </li>
+                        <hr className="filter-hr" />
+                        <li className="filter-list-item">
+                            <p className="no-margin">Plant Size</p>
+                            <p className="no-margin">+</p>
+                        </li>
+                        <hr className="filter-hr" />
+                        <li className="filter-list-item">
+                            <p className="no-margin">Water Schedule</p>
+                            <p className="no-margin">+</p>
+                        </li>
+                        <hr className="filter-hr" />
+                        <li className="filter-list-item">
+                            <p className="no-margin">Color</p>
+                            <p className="no-margin">+</p>
+                        </li>
+                        <hr className="filter-hr" />
+                        <li className="filter-list-item">
+                            <p className="no-margin">Seasonal</p>
+                            <p className="no-margin">+</p>
+                        </li>
+                        <hr className="filter-hr" />
+                        <li className="filter-list-item">
+                            <p className="no-margin">Light Efficient</p>
+                            <p className="no-margin">+</p>
+                        </li>    
+                    </ul>
                     <div className="products-section">
                         <div className="product-no-and-sort-container">
                             <p className="no-of-products">30 products</p>
