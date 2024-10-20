@@ -1,27 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-.modal-bg {
-    background-color: #f3e5f5;
-    min-height: 400px;
-    min-width: 500px;
-    padding: 30px;
-    border-radius: 10px;
-    border: 1px solid black;
-    color: #2f4f4f;
-}
-
-.modal-heading {
-    font-family: 'Lato', sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.modal-product-details {
-    display: flex;
-    align-items: center;
-}
 
 .modal-plant-img {
     height: 200px;
@@ -30,13 +7,13 @@
     border: 1px solid #2f4f4f;;
 }
 
-.modal-product-description {
-    margin-left: 20px;
-}
-
-.modal-details-para {
+.modal-plant-name {
+    font-family: Poppins, sans-serif;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
+    text-align: center;
+    color: #165315;
+    margin-top: 30px;
 }
 
 .modal-details-confirm-btn {
@@ -57,7 +34,7 @@
 }
 
 .modal-close-btn-container {
-
+    
 }
 
 .modal-close-btn {
@@ -76,17 +53,43 @@
     font-size: 30px;
 }
 
-.modal2-bg {
+.modal-bg {
     background-color: white; 
     border-radius: 10px; 
     padding: 20px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 450px;
+    height: 660px;
     font-family: Poppins, sans-serif;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
 }
 
-.modal2-heading {
+.ellipse {
+    position: absolute;
+    background-color: #F0FFE5;
+    border-radius: 50%; 
+    z-index: -1;
+}
+
+.top-ellipse {
+    width: 432px;
+    height: 330px;
+    right: -250px;
+    transform: rotate(134deg);
+}
+
+.bottom-ellipse {
+    width: 467px;
+    height: 292px;
+    left: -280px;
+    bottom: -130px;
+    transform: rotate(134deg)
+}
+
+.modal-heading {
     font-family: Poppins, sans-serif;
     font-size: 17px;
     font-weight: 400;
@@ -100,11 +103,19 @@
     margin-bottom: 25px;
 }
 
-.modal2-content-container {
+.modal-content-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 70px 0px;
+}
+
+.modal-price-text {
+    color: #165315;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 25px 0px;
+    padding: 0px 30px
 }
 
 .modal2-thank-you-text {

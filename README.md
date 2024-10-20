@@ -57,11 +57,11 @@ This application follows a **component-based architecture** to ensure maintainab
   - Referred to the React Popup documentation and integrated the relevant popup type. The popup was then customized to meet the project’s requirements.
   - The ‘Add to Cart’ button was set as the trigger for the popup, which displays a checkout modal when clicked.
 - Managing State with useState Hook and adding close button
- - Used the useState hook to manage the state of the checkout process. This tracks whether the checkout button inside the modal is clicked.
- - Imported 'x' icon from 'react-icons' for the close button.
+  - Used the useState hook to manage the state of the checkout process. This tracks whether the checkout button inside the modal is clicked.
+  - Imported 'x' icon from 'react-icons' for the close button.
 - Displaying the Final Modal:
- - Once the checkout button inside the modal is clicked, the state is updated, and a final Congratulations Page is displayed.
- - The Congratulations page includes a ‘Continue Shopping’ button, which closes the modal and returns the user to the main shopping area.
+  - Once the checkout button inside the modal is clicked, the state is updated, and a final Congratulations Page is displayed.
+  - The Congratulations page includes a ‘Continue Shopping’ button, which closes the modal and returns the user to the main shopping area.
 ## Challenges Faced
 ### 1. Pagination Implementation
 **Challenge:** Implementing pagination posed some difficulties, especially when specifying different variables such as noOfPages, lastIndex, firstIndex, and currentPage. I had to determine where to add these variables and how to manage state with useState to ensure the Home page re-renders whenever the page changes. 
@@ -78,6 +78,11 @@ This application follows a **component-based architecture** to ensure maintainab
 **Challenge:** Writing comprehensive and professional documentation from scratch typically takes 2 to 3 hours.  
 **Solution:** Instead of creating the documentation from scratch, I provided a zip file of the code, along with the issues I faced and an outline. Using AI tools, I was able to generate tailor-cut, professional documentation efficiently.  
 **Outcome:** Documentation was completed within 30-40 minutes, allowing me to focus on other development tasks while still delivering high-quality, professional documentation.
+
+### 4. Documentation Efficiency with AI Assistance
+**Challenge:** While developing the modals triggered by the "Add to Cart" button, I encountered difficulties creating the desired background for these modals. Initially, I was unsure how to implement the background design effectively.  
+**Solution:** Upon reviewing the Figma design, I identified that the background consisted of ellipses. To achieve this effect, I consulted ChatGPT for guidance on creating such ellipses. After receiving an example, I customized the code to fit my specific style and dimensions as outlined in the Figma file. However, I faced another issue: the ellipses were obstructing content both in the modal and on the homepage. After thoroughly analyzing the stacking context, I resolved this by setting the z-index of the ellipses to -1 and the overflow property of the modal to hidden.
+**Outcome:** This approach successfully resolved the issue, allowing the modal content to be displayed properly while maintaining the desired background design. This experience not only enhanced my understanding of CSS properties and stacking contexts but also improved my problem-solving skills in a practical development scenario.
 
 ## Running the Project
 To run this project in your environment, follow these steps:

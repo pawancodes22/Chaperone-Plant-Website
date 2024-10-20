@@ -20,32 +20,38 @@ const AddPopUp = props => {
         >
             {close =>(
                 <>
-                    {!areDetailsConfirmed ? (<div className="modal-bg">
-                        <div className="modal-close-btn-container">
-                            <button className="modal-close-btn" onClick={close}>
-                                <IoIosClose className="modal-close-icon" />
-                            </button>
-                        </div>
-                        <h1 className="modal-heading">Checkout</h1>
-                        <hr/>
-                        <div className="modal-product-details">
-                            <img src={imageUrl} alt="plant" className="modal-plant-img" />
-                            <div className="modal-product-description">
-                                <p className="modal-details-para">{name}</p>
-                                <p className="modal-details-para">Price: ₹{finalPrice}/-</p>
-                                <button onClick={changeConfirmStatus} className="modal-details-confirm-btn">Confirm Details</button>
-                            </div>
-                        </div>
-                    </div>) : (
-                        <div className="modal2-bg">
+                    {!areDetailsConfirmed ? 
+                        (<div className="modal-bg">
+                            <div className="ellipse top-ellipse"></div>
+                            <div className="ellipse bottom-ellipse"></div>
                             <div className="modal-close-btn-container">
                                 <button className="modal-close-btn" onClick={close}>
                                     <IoIosClose className="modal-close-icon" />
                                 </button>
                             </div>
-                            <h1 className="modal2-heading">Your Cart</h1>
+                            <h1 className="modal-heading">Your Cart</h1>
                             <hr className="horizontal-line"/>
-                            <div className="modal2-content-container">
+                            <div className="modal-content-container">
+                                <img src={imageUrl} alt="plant" className="modal-plant-img" />
+                                <h1 className="modal-plant-name">{name}</h1>        
+                                <p className="modal-price-text">Final Price: ₹ {finalPrice}/-</p>
+                                <button onClick={changeConfirmStatus} className="modal-details-confirm-btn">Confirm Product</button>
+                            </div>
+                        </div>
+
+                        )
+                     : (
+                        <div className="modal-bg">
+                            <div className="ellipse top-ellipse"></div>
+                            <div className="ellipse bottom-ellipse"></div>
+                            <div className="modal-close-btn-container">
+                                <button className="modal-close-btn" onClick={close}>
+                                    <IoIosClose className="modal-close-icon" />
+                                </button>
+                            </div>
+                            <h1 className="modal-heading">Your Cart</h1>
+                            <hr className="horizontal-line"/>
+                            <div className="modal-content-container">
                                 <p className="congratulations-text">
                                     Congratulations
                                     <br />
