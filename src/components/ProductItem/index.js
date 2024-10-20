@@ -6,10 +6,10 @@ import './index.css'
 
 const ProductItem = props => {
     const {item} = props
-    const {imageUrl, name, specification, rating, originalPrice, finalPrice} = item
+    const {id, imageUrl, name, specification, rating, originalPrice, finalPrice} = item
     const navigate = useNavigate()
     const openProduct = () => {
-        navigate(`/product/${name}`)
+        navigate(`/product/${id}`)
     }
     return (
         <li className="product-item">
