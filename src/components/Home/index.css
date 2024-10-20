@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.search-bar-section {
+    display: flex;
+    justify-content: center;
+}
+
+.search-items-container {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid #666666;
+}
+
+.search-input-bar {
+    border-style: none;
+    outline: none;
+    margin: 0px 5px;
+}
+
+.search-input-bar::placeholder {
+    color: #838383;
+    font-family: Poppins, sans-serif;
+}
+
+.search-flower-icon {
+    height: 25px;
+    width: 32px;
+}
+
+.products-filter-section {
+    padding: 60px;
+    display: flex;
+}
+
+.filters-container {
+    width: 305px;
+    height: 715px;
+    background-color:  #f0ffe5;
+    margin-right: 50px;
+    flex-shrink: 0;
+}
+
+.product-no-and-sort-container {
+    display: flex;
+    align-items: center;
+}
+
+.no-of-products {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.products-container {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}

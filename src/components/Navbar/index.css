@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.header-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-text {
+    font-size: 25px;
+    font-weight: 600;
+    color: #0F4811;
+    margin: 0px 0px 0px 15px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    font-family: Poppins, sans-serif;
+}
+
+.header-menu-options {
+    display: flex;
+    padding: 0px;
+    align-items: center;
+}
+
+.header-menu-item {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    margin-right: 32px;
+}
+
+.profile-cart-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.header-profile-or-cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.header-profile-or-cart-para {
+    font-size:  12px;
+    margin: 5px;
+    font-weight: 500;
+}
+
+.header-icon {
+    font-size: 35px;
+}
+
+.cart-items-number {
+    background-color: #F3A939;
+    color: black;
+    border-radius: 50%;
+    width:15px;
+    height: 15px;
+    align-self: flex-end;
+    margin: 0px;
+    font-size: 10px;
+    margin-left: 10px;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
