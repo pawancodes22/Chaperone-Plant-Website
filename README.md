@@ -109,3 +109,5 @@ To run this project in your environment, follow these steps:
     npm install
 4. Run the project:
     npm start
+5. Deployment Link:
+    [Deployment Link](https://stupendous-sprinkles-3d3234.netlify.app/)
